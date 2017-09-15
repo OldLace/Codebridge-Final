@@ -38,8 +38,6 @@ body {
     margin:0 auto; 
     overflow:auto; 
     padding:80px 0; 
-   /* width:940px; 
-    height: 940px;*/
 }
 
 /*#content{
@@ -60,8 +58,6 @@ body {
 }
 
 #footer { 
-/*    line-height:40px; 
-*/  /*  margin:0 auto; */
     width:100%
     margin-bottom: 30px; 
 }
@@ -83,7 +79,7 @@ nav li {
     padding-top: 5px;
     margin-left: 55px;
     margin-right: 20px;
-    /*margin-top: 20px;*/
+    
 
 }
 
@@ -99,14 +95,6 @@ nav ul li a {  /*this could probably just be nav a*/
 nav a:hover {
     color: purple;
 }
-
-/*nav a::before {
-    content '';
-    display: block;
-    height: 5px;
-    background-color: whitesmoke;
-}*/
-
 table {
     font-family: sans-serif;
     font-size: 10px;
