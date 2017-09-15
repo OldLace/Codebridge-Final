@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Super Duper Computers!</title>
+
+<link rel="stylesheet" type="text/css" href="../styles/superduper.css">
+   <!-- Favicons are kinda my thing -->
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+
+<style>
+    img {
+        margin-top: 50px;
+        margin-left: 200px;
+    }
+#content {
+  display: flex;
+  align-content: ;
+ /* flex-direction: column;*/
+}
+#main1 {
+margin-left: 105px;
+margin-top: 115px;
+width:500px;
+height: 300px;
+/*border: 2px solid orange;*/   
+}
+#main2 {
+width:200px;
+height: 200px;
+border: 2px solid blue;
+}
+body {
+    /*background-image: url("images/support/lifetime-logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}*/
+}
+#container {
+    display: flex;
+
+
+/*h1 {
+    font-family: 'Londrina Outline', cursive;
+    font-size: 90px;
+    margin-left: 250px;*/
+}
+.page_title{
+/*  border:2px solid black;*/
+  width: 100%;
+  height: 85px;
+  margin-top: 70px;
+  margin-left: 200px;
+  font-size: 100px; 
+  font-family: 'Londrina Outline', cursive;
+  }
+ #index_flex {
+  display: flex;
+  align-items: center;
+ }
+ #blurb {
+  margin-left: 150px;
+  font-family: 'Raleway', sans-serif;
+ }
+/* .page_title{
+*/ /*border:2px solid black;
+  width: 100%;
+  height: 85px;
+  margin-top: 50px;
+  font-size: 50px; 
+  font-family: 'Londrina Outline', cursive; */
+}
+</style>
+</head>
+
+<!-- Start of header -->
+<div id="header_container">
+    <div id="header">
+    <!-- <img src="images/dslogo.png" width="60px" height="51px"> -->
+      <nav>
+        <ul>
+         <li><a href="desktops.html">Desktops</a></li>
+         <li><a href="systems.html">Laptops</a></li>
+         <li><a href="support.html">Support</a></li>
+         <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+     </div>
+    </div>
+</div>
+<!-- End of header and navbar -->
+<body>
+ <div>
+    <h1 class="page_title">Super Duper Computers!</h1>
+</div>
+<div id=blurb>
+  <h3>Super Duper's desktops and laptops are built with the best high performance components, overclocked processors</h3>
+</div>
+<!-- Start of Page Content -->
+        <script type="text/javascript">
+
+var i = 0; 
+var images = [];
+var time = 3000;
+// Slideshow images are from originpc.com
+// // Array of images for auto slideshow 
+// Pics alternate between laptops and accolades
+images[0] = "../images/index/slideshow/main-cnet.png";
+images[1] = "../images/laptops/eon15-s-back-open-true-fire-blue-_burned.png";
+images[2] = "../images/index/slideshow/main-digital.png";
+images[3] = "../images/laptops/eon15-s-back-open-red-_burned.png";
+images[4] = "../images/index/slideshow/main-pc.png";
+images[5] = "../images/laptops/eon15-s-back-open-purple-_burned.png";
+images[6] = "../images/index/slideshow/main-techrader.png";
+images[7] = "../images/laptops/eon15-s-back-open-pink-_burned.png";
+images[8] = "../images/index/slideshow/main-tom.png"
+images[9] = "../images/laptops/eon15-s-back-open-green-_burned.png";
+images[10] = "../images/index/slideshow/main-tweaktown.png"
+images[11] = "../images/laptops/eon15-s-back-open-neurons-_burned.png";
+images[12] = "../images/index/slideshow/toms-readers-choice.png"
+
+ //Function to change images
+ function changeImg(){
+ document.slide.src = images[i];
+
+ if(i < images.length - 1){
+ i++;
+ } else {
+j = 0;
+}
+
+ setTimeout("changeImg()", time); 
+}
+//Slideshow starts on page load
+window.onload = changeImg;
+</script>
+<div id="index_flex">
+  <body background="../images/background_main.jpg">  <!-- Used a subtle image for some flavor on a few pages -->
+  <div class="babyflex">
+    <img src="../images/index/open_laptop.png">
+  </div>
+  <div class="babyflex">
+    <img id="slidey" name="slide">   <!-- Slideshow -->
+  </div>   
+  </body>
+</div>
+
+<!-- End of page content -->
+ 
+<!-- Start of footer -->
+<div id="footer_container">
+    <div id="footer">
+       © 2017 SD Computers Corporation. All Rights Reserved.
+    </div> 
+</div>
+<!-- End of footer -->
+
+</html>

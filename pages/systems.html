@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Super Duper Laptops</title>
+<!-- The pictures of computers on this page are from originpc.com -->
+<link rel="stylesheet" type="text/css" href="../styles/superduper.css">
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+<style type="text/css">
+body {
+    background: url("../images/background_main.jpg"); /*It's subtle*/
+}
+  
+#container {
+  width: 960px; 
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+ /*divs that expand on hover to reveal item information*/
+.forsale {
+    height: 115px;  /*Played around with the height until it showed only the item*/
+    border-radius: 25px;  /*This causes the edges to be curved*/
+    width: 22%; 
+    margin: 5px 1% 5px 1%; 
+    float: left; 
+    position: relative; 
+    transition:height 0.8s; /* Time the div takes to expand */
+    overflow: hidden;
+      }
+    .forsale:hover {
+        height: 600px; /* The div expands to this upon mouse cursor contact  */
+}
+table {              /* Tables are used in expanding divs to display product info*/
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid whitesmoke; /*I use whitesmoke all the time, personal preference*/
+    text-align: center;
+    padding: 8px;
+}
+th {
+    font-size: 14px
+}
+
+tr:nth-child(odd) {                /*Alternating colors on the table rows*/
+    background-color: purple;
+}
+.slidestuff {
+  position: absolute;
+  margin-right: 100px;
+
+}
+.slidestuff img {
+  margin-right: 100px;
+/*  padding-right: 30px;
+*/  
+}
+/*#laptop_slideshow {
+display:none;
+}*/
+
+.mySlides {
+  display: none;
+}
+.page_title{
+/*  border:2px solid black;*/
+  width: 100%;
+  height: 85px;
+  margin-top: 50px;
+  font-size: 50px; 
+  font-family: 'Londrina Outline', cursive;  /*Need a good font for all the white space*/
+}
+h1 {
+  margin-top: 40px;
+}
+/*#dollar_sign {   This was to be part of a scheme to show a $ when an item to the cart
+  display: none;       See functions below 
+}*/
+</style>
+</head>
+
+<body>
+<!-- Start of header -->
+<div id="header_container">
+    <div id="header">
+      <nav>
+        <ul>
+         <li><a href="desktops.html">Desktop PCs</a></li>
+         <li><a href="systems.html">Laptops</a></li>
+         <li><a href="support.html">Support</a></li>
+         <li><a href="about.html">About</a></li>
+         <li>
+          <form name="cart">
+            $<input id="display" type="text" name="output" size="7" placeholder="0000"/>   
+        <input type="button" id="scart" value="Checkout" onclick=location.href="404.html">
+          </form>
+          
+<!-- <input type="button" name="b1" value="Click Me" onclick="location.href='myPage.htm'"> -->
+
+
+        </li>
+        </ul>
+      </nav>
+     </div>
+    </div>
+    <!--  <img src="images/dollar_sign2.png"> -->
+</div>
+<!-- End of header -->
+ 
+<!-- Start of page content -->
+<center>
+  <div class="page_title">
+  <h1>Pick Your Portable Poison!</h1>  
+ <!--  <img src="images/sd_logo.jpg"> -->
+ <!--  <h1>SD Computers | Laptops</h1> -->
+</div>
+</center>
+<div id="container">
+<p class="captions">Great</p>
+    <div class="forsale" style="background-color:#2A75A9;"><img src="../images/laptops/eon15-s-back-open-purple-_burned.png">
+    <table>
+  <tr>
+    <th>SuperDuper SD15 Portable</th>
+     </tr>
+  <tr>
+    <td>7th Generation Intel® Core™ i7-7820HK</td>
+  </tr>
+  <tr>
+    <td>32GB DDR4 at 2400MHz</td>
+  </tr>
+  <tr>
+    <td>NVIDIA® GeForce® GTX 1080 with 8GB GDDR5X</td>
+  </tr>
+  <tr>
+    <td> 15.6-in. display</td>
+  </tr>
+  <tr>
+    <td>256GB PCIe SSD (Boot) + 1TB 7200RPM SATA 6Gb/s (Storage)</td>
+  </tr>
+  <tr>
+    <td>Windows 10 Home 64-bit English</td>
+  </tr>
+  <tr>
+    <td><button id="scart" onclick="addCart(1799)", onclick="showMeTheMoney()">Add To Cart</button></td>
+  </tr>
+    
+  </table>
+</div>
+<p class="captions">Better</p>
+    <div class="forsale" style="background-color:#60e0a6;"><img src="../images/laptops/eon15-s-back-open-blue-_burned.png">
+      <table>
+  <tr>
+    <th>SuperDuper SD50 Portable</th>
+     </tr>
+  <tr>
+    <td>7th Generation Intel® Core™ i7-7820HK</td>
+  </tr>
+  <tr>
+    <td>32GB DDR4 at 2400MHz</td>
+  </tr>
+  <tr>
+    <td>NVIDIA® GeForce® GTX 1080 with 8GB GDDR5X</td>
+  </tr>
+  <tr>
+    <td> 15.6-in. display</td>
+  </tr>
+  <tr>
+    <td>256GB PCIe SSD (Boot) + 1TB 7200RPM SATA 6Gb/s (Storage)</td>
+  </tr>
+  <tr>
+    <td>Windows 10 Home 64-bit English</td>
+  </tr>
+  <tr>
+    <td><button id="scart" onclick="addCart(1999)">Add To Cart</button></td>
+  </tr>
+  </table>
+</div>
+<p class="captions">Almost the Best</p> 
+    <div class="forsale" style="background-color:orange;"><img src="../images/laptops/eon15-s-back-open-red-_burned.png"> <table>
+  <tr>
+    <th>SuperDuper SD525 Portable</th>
+     </tr>
+  <tr>
+    <td>7th Generation Intel® Core™ i7-7820HK</td>
+  </tr>
+  <tr>
+    <td>64GB DDR4 at 2400MHz</td>
+  </tr>
+  <tr>
+    <td>NVIDIA® GeForce® GTX 1080 with 8GB GDDR5X</td>
+  </tr>
+  <tr>
+    <td> 15.6-in. display</td>
+  </tr>
+  <tr>
+    <td>512GB PCIe SSD (Boot) + 2TB 7200RPM SATA 6Gb/s (Storage)</td>
+  </tr>
+  <tr>
+    <td>Windows 10 Professional 64-bit English</td>
+  </tr>
+  <tr>
+    <td><button id="scart" onclick="addCart(2799)">Add To Cart</button></td>
+  </tr>
+</table>
+</div>
+<p class="captions">Portable God</p>
+<div class="forsale" style="background-color:#f44277;"><img src="../images/laptops/eon15-s-back-open-green-_burned.png"> <table>
+  <tr>
+    <th>SuperDuper SD1000! Portable</th>
+     </tr>
+  <tr>
+    <td>7th Generation Intel® Core™ i9-9850HK</td>
+  </tr>
+  <tr>
+    <td>128GB DDR4 at 2400MHz</td>
+  </tr>
+  <tr>
+    <td>NVIDIA® GeForce® GTX 1080Ti with 18GB GDDR5X</td>
+  </tr>
+  <tr>
+    <td> 17.3-in. display</td>
+  </tr>
+  <tr>
+    <td>512GB PCIe SSD (Boot) + 3TB 7200RPM SATA 6Gb/s (Storage)</td>
+  </tr>
+  <tr>
+    <td>Windows 10 Professional 64-bit English</td>
+  </tr>
+  <tr>
+    <td><button id="scart" onclick="addCart(4999)">Add To Cart</button></td>
+  </tr>
+</table>
+</div>
+
+<script type="text/javascript">
+
+// When an Add to Cart button is clicked, the pre-existing display value is grabbed and added to the price. The conversion from a string to a number value takes place via the number method
+function addCart(v){
+  
+      document.getElementById('display').value = Number(document.getElementById('display').value) + Number(v);
+} 
+
+</script>
+
+
+<!-- When an item was added to the cart, a dollar sign was supposed to pop up and disappear via these functions: -->
+
+  <!--  function showMeTheMoney () {   document.getElementById("dollar_sign").style.display='block'
+     }
+    
+ function removeMoney () {
+   document.getElementById("dollar_sign").style.display='none'
+     }
+
+ function pleaseWork() {
+  setTimeout(removeMoney(), 3000);
+    }
+
+ pleaseWork();  -->
+ 
+<!-- Start of footer -->
+<div id="footer_container">
+    <div id="footer">
+  
+    Copyright © SuperDuper™ Computers
+    </div>
+</div>
+<!-- End of footer -->
+
+</html>

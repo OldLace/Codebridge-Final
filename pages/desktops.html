@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Super Duper | Desktops</title>
+<!-- The pictures of computers on this page are from originpc.com -->
+
+<link rel="stylesheet" type="text/css" href="superduper.css">
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+<style type="text/css">
+  
+#container { 
+  /*width: 960px; */
+  margin: 0 auto;
+  margin-left: 15px;
+}
+.forsale {
+    height: 115px;
+    border-radius: 25px; 
+    width: 22%; /* Original width */
+    margin: 5px 1% 5px 1%; 
+    float: left; 
+    position: relative; 
+    transition:height 0.8s; /* Time it takes for div to expand on hover */
+    overflow: hidden;
+      }
+    .forsale:hover {
+        height: 700px; /* This is the height on hover */
+        width:325px;
+}
+table {
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid whitesmoke;
+    text-align: center;
+    padding: 8px;
+}
+th {
+    font-size: 14px
+}
+
+tr:nth-child(odd) {            /*Alternating colors on table rows*/
+    background-color: purple;
+}
+/*.slidestuff {
+  width: 1274;       //Old code from failed slideshow
+  height:170;
+  position: relative;*/
+  
+.mySlides {           /*The slideshow was from an earlier class assignment*/
+  display: none;
+}
+table img {
+  margin-right: 20px;
+}
+.captions {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+.page_title{
+/*  border:2px solid black;*/
+  width: 100%;
+  height: 85px;
+  font-size: 50px; 
+  font-family: 'Londrina Outline', cursive;
+}
+  h1 {
+  margin-top: 80px; 
+}
+
+</style>
+</head>
+<!-- Start of Navbar -->
+<div id="header_container">
+    <div id="header">
+      <nav>
+        <ul>
+        <li><a href="desktops.html">Desktops</a></li>
+         <li><a href="systems.html">Laptops</a></li>
+         <li><a href="support.html">Support</a></li>
+         <li><a href="about.html">About</a></li>
+         <li> <!--  <img src=images/desktops/cart.png> -->
+         <form name="cart">
+            <input id="display" type="text" name="output" size="7" placeholder="0000"/>
+            <button id="scart" onclick="error()">Checkout</button>
+          </form>
+        </li>
+        </ul>
+      </nav>
+     </div>
+    </div>
+</div>
+<!-- End of Navbar -->
+<center>
+  <div class="page_title">
+    <h1>Pick Your Poison!</h1>  
+  </div>
+</center>
+<body>
+
+<!-- Start of Main Page Content -->
+<div id="container">
+<p class="captions">Great</p>
+    <div class="forsale" style="background-color:#2A75A9;"><img src="../images/desktops/desktops-chronos.png">
+    <table>
+  <tr>
+    <th>SuperDuper SD15</th>
+  </tr>
+  <tr>
+    <td>7th Generation Intel® Core™ i7-7820HK</td>
+  </tr>
+  <tr>
+    <td>32GB DDR4 at 2400MHz</td>
+  </tr>
+  <tr>
+    <td>NVIDIA® GeForce® GTX 1080 with 8GB GDDR5X</td>
+  </tr>
+  <tr>
+    <td> 15.6-in. display</td>
+  </tr>
+  <tr>
+    <td>256GB PCIe SSD (Boot) + 1TB 7200RPM SATA 6Gb/s (Storage)</td>
+  </tr>
+  <tr>
+    <td>Windows 10 Home 64-bit English</td>
+  </tr>
+  <tr>
+    <td><button id="scart" onclick="addCart(999)">Add To Cart</button></td>
+  </tr>
+    
+
+</table>
+</div>
+  <p class="captions">Better</p>  
+    <div class="forsale" style="background-color:#60e0a6;"><img src="../images/desktops/desktops-genesis-red.png">
+      <table>
+  <tr>
+    <th>SuperDuper SD25</th>
+     </tr>
+  <tr>
+    <td>7th Generation Intel® Core™ i7-7820HK</td>
+  </tr>
+  <tr>
+    <td>32GB DDR4 at 2400MHz</td>
+  </tr>
+  <tr>
+    <td>NVIDIA® GeForce® GTX 1080 with 8GB GDDR5X</td>
+  </tr>
+  <tr>
+    <td> 15.6-in. display</td>
+  </tr>
+  <tr>
+    <td>256GB PCIe SSD (Boot) + 1TB 7200RPM SATA 6Gb/s (Storage)</td>
+  </tr>
+  <tr>
+    <td>Windows 10 Home 64-bit English</td>
+  </tr>
+  <tr>
+    <td><button id="scart" onclick="addCart(1499)">Add To Cart</button></td>
+  </tr>
+</table>
+    </div>
+    <p class="captions">Best</p>
+    <div class="forsale" style="background-color:orange;"><img src="../images/desktops/desktops-millennium-black.png"> <table>
+  <tr>
+    <th>SuperDuper SD25</th>
+     </tr>
+  <tr>
+    <td>7th Generation Intel® Core™ i7-7820HK</td>
+  </tr>
+  <tr>
+    <td>64GB DDR4 at 2400MHz</td>
+  </tr>
+  <tr>
+    <td>NVIDIA® GeForce® GTX 1080 with 8GB GDDR5X</td>
+  </tr>
+  <tr>
+    <td> 15.6-in. display</td>
+  </tr>
+  <tr>
+    <td>512GB PCIe SSD (Boot) + 2TB 7200RPM SATA 6Gb/s (Storage)</td>
+  </tr>
+  <tr>
+    <td>Windows 10 Professional 64-bit English</td>
+  </tr>
+  <tr>
+    <td><button id="scart" onclick="addCart(1999)">Add To Cart</button></td>
+  </tr>
+</table>
+</div>
+<p class="captions">Godlike</p>
+<div class="forsale" style="background-color:#f44277;"><img src="../images/desktops/desktops-neuron-evolv.png"> <table>
+  <tr>
+    <th>SuperDuper SD1000!</th>
+     </tr>
+  <tr>
+    <td>7th Generation Intel® Core™ i9-9850HK</td>
+  </tr>
+  <tr>
+    <td>128GB DDR4 at 2400MHz</td>
+  </tr>
+  <tr>
+    <td>NVIDIA® GeForce® GTX 1080Ti with 18GB GDDR5X</td>
+  </tr>
+  <tr>
+    <td> 17.3-in. display</td>
+  </tr>
+  <tr>
+    <td>512GB PCIe SSD (Boot) + 3TB 7200RPM SATA 6Gb/s (Storage)</td>
+  </tr>
+  <tr>
+    <td>Windows 10 Professional 64-bit English</td>
+  </tr>
+  <tr>
+    <td><button id="scart" onclick="addCart(2999)">Add To Cart</button></td>
+  </tr>
+</table>
+</div>
+<script type="text/javascript">
+  function addCart(v){
+  
+      document.getElementById('display').value = Number(document.getElementById('display').value) + Number(v);
+}
+
+
+function error() {
+    alert("Error! Please contact customer service.");
+}
+</script>
+</script>
+<div id="footer_container">
+    <div id="footer">
+       © 2017 SD Computers Corporation. All Rights Reserved.
+       <h6><p><a href="#openModal">*Special Note about Prices*</a></p></h6>
+
+<div id="openModal" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <p><img src="../images/badge22.png"></p>
+    <p>Super Duper Computers is committed to excellence and low prices!</p>
+  </div>
+</div>
+    </div> 
+</div>

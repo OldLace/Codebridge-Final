@@ -1,0 +1,172 @@
+
+/*Import font from Google for navbar*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+ /*Font for various headings*/
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Londrina+Outline');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+/*html {
+    overflow: hidden;
+}*/
+/* Reset body padding and margins */
+body { 
+    margin:0; 
+    padding:0; 
+}
+ 
+/* Make Header Sticky */
+#header_container { 
+    background:#eee; 
+    border:1px solid #666; 
+    height:60px; 
+    left:0; 
+    position:fixed; 
+    width:100%; 
+    top:0; 
+}
+
+#header { 
+    line-height:60px; 
+    margin:0 auto; 
+    width:940px; 
+    text-align:center; 
+}
+ 
+/* CSS for the content of page. I am giving top and bottom padding of 80px to make sure the header and footer do not overlap the content.*/
+#container { 
+    margin:0 auto; 
+    overflow:auto; 
+    padding:80px 0; 
+   /* width:940px; 
+    height: 940px;*/
+}
+
+/*#content{
+
+}*/
+ 
+/* Make Footer fixed */
+#footer_container { 
+    background:#eee; 
+    border:1px 
+    solid #666; 
+    bottom:0; 
+    height:76px; 
+    left:0; 
+    position:fixed; 
+    width:100%; 
+    text-align:center; 
+}
+
+#footer { 
+/*    line-height:40px; 
+*/  /*  margin:0 auto; */
+    width:100%
+    margin-bottom: 30px; 
+}
+.logo {
+    float: left;   /*PUTS LOGO IN TOP LEFT*/
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    list-style: none; 
+}
+
+nav li {
+    display: inline-block;
+    padding-top: 5px;
+    margin-left: 55px;
+    margin-right: 20px;
+    /*margin-top: 20px;*/
+
+}
+
+nav ul li a {  /*this could probably just be nav a*/
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500px;
+}
+
+nav a:hover {
+    color: purple;
+}
+
+/*nav a::before {
+    content '';
+    display: block;
+    height: 5px;
+    background-color: whitesmoke;
+}*/
+
+table {
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    border-collapse: collapse;
+    width: 100%;
+}
+/*Code for the modal was obtain @ Web Designer Depot
+    Article titled: "Creating a Modal Window with-HTML5 & CSS3" / */
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+        .modalDialog:target {
+            opacity:5;
+            pointer-events: auto;
+        }
+
+         /*Code for the modal was obtain @ Web Designer Depot
+            Article titled: "Creating a Modal Window with-HTML5 & CSS3" / */
+         .modalDialog > div {
+            color: blue;
+            width: 400px;
+            position: relative;
+            margin: 10% auto;
+            padding: 5px 20px 13px 20px;
+            border-radius: 10px;
+            background: #72c0db;
+            background: -moz-linear-gradient(#fff, #999);
+            background: -webkit-linear-gradient(#fff, #999);
+            background: -o-linear-gradient(#fff, #999);
+        }
+        .close { 
+            background: #606061; 
+            color: #4389c1; 
+            line-height: 25px; 
+            position: absolute; right: -12px; 
+            text-align: center; top: -10px; 
+            width: 24px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            -webkit-border-radius: 12px; 
+            -moz-border-radius: 12px; 
+            border-radius: 12px; 
+            -moz-box-shadow: 1px 1px 3px #000; 
+            -webkit-box-shadow: 1px 1px 3px #000; 
+            box-shadow: 1px 1px 3px #000; 
+        } 
+            .close:hover { 
+                background: #00d9ff; 
+            }
+
